@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body class="text-gray-800">
+    <header class="bg-blue-500 text-white p-6 text-center shadow-md">
+        <h1 class="text-2xl font-bold">Student Registration System</h1>
+        <p class="mt-2">Register student details and manage records easily. Edit or delete records as needed.</p>
+    </header>
+
+    <main class="container mx-auto my-8 p-4">
+        <div class="flex">
+            <!-- Empty left space (2%) -->
+            <div class="w-2%"></div>
+
+            <!-- Registration form (25%) -->
+            <section id="registration" class="w-1/4 bg-white p-6 rounded-lg shadow-md fade-in">
+                <h2 class="text-xl font-semibold mb-4">Register New Student</h2>
+                <form id="student-form" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Student Name:</label>
+                        <input type="text" id="name" name="name" required
+                            class="w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="student-id" class="block text-sm font-medium">Student ID:</label>
+                        <input type="number" id="student-id" name="student-id" required
+                            class="w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email ID:</label>
+                        <input type="email" id="email" name="email" required
+                            class="w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <div>
+                        <label for="contact" class="block text-sm font-medium">Contact No.:</label>
+                        <input type="tel" id="contact" name="contact" required
+                            class="w-full p-2 border border-gray-300 rounded-md">
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-green-400 to-blue-500 text-white p-2 rounded-md hover:bg-gradient-to-l hover:from-blue-500 hover:to-green-400 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300">Add
+                        Student</button>
+                </form>
+            </section>
+
+            <!-- Data representation table (65%) -->
+            <section id="records" class="w-2/3 ml-4 bg-white p-6 rounded-lg shadow-md fade-in">
+                <h2 class="text-xl font-semibold mb-4">Registered Students</h2>
+                <table id="student-table" class="min-w-full bg-white border border-gray-200">
+                    <thead>
+                        <tr class="bg-gray-100">
+                            <th class="py-2 px-4 border-b">Name</th>
+                            <th class="py-2 px-4 border-b">Student ID</th>
+                            <th class="py-2 px-4 border-b">Email</th>
+                            <th class="py-2 px-4 border-b">Contact No.</th>
+                            <th class="py-2 px-4 border-b">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Student records will be inserted here -->
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Empty right space (2%) -->
+            <div class="w-2%"></div>
+        </div>
+    </main>
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-lg font-bold mb-2">Student Registration System</p>
+            <p class="text-md mb-4">Developed by Mohammad Zishan</p>
+            <p class="text-sm mb-2">Tarique Anwar Urdu High School, Giroli</p>
+            <p class="text-xs">AT Post Giroli, India | Contact: +91-9168-444-099</p>
+            <p class="text-xs mt-2">&copy; 2024 Tarique Anwar Urdu High School. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

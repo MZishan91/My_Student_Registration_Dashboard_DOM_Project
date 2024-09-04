@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/DOM/school-background-fvzmkdcjswmjz5y7.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    display: contents; /* Ensures the grid layout applies to child sections */
+}
+.flex{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;  
+    display: flex;
+}
+#registration, #records {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registration {
+    background: rgba(194, 252, 252, 0.9);
+    backdrop-filter: blur(-10px);
+}
+
+#registration h2 {
+    color: #484b4f;
+}
+
+#records {
+    background: rgba(95, 120, 120, 0.9);
+    backdrop-filter: blur(-10px);
+}
+
+#records h2 {
+    color: #d7dde7;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+.actions button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #e53935;
+}
+
+#student-table {
+    display: block;
+    margin-bottom: 2%;
+    max-height: 300px; /* Set a max height */
+    overflow-y: auto; /* Vertical scrollbar for overflow */
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.highlight {
+    background: linear-gradient(to right, #6ee7b7, #3b82f6);
+    color: white;
+}
